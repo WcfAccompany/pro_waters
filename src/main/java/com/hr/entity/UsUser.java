@@ -1,11 +1,12 @@
 package com.hr.entity;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 import javax.persistence.*;
 
 @Table(name = "us_user")
-public class UsUser {
+public class UsUser implements Serializable {
     @Id
     @Column(name = "UserNo")
     @GeneratedValue(generator = "JDBC")
